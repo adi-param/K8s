@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="525" viewBox="0 0 1200 525" role="img" aria-label="Authorization">
+  <defs>
+    <filter id="paper-6" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="4" seed="13" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.06"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+    <filter id="sketch-6" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#24383b" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <style>
+    .paper { fill: #fbf5e9; filter: url(#paper-6); }
+    .wash { opacity: .36; }
+    .dash, .thin, .accent-line { fill: none; stroke: #24383b; stroke-linecap: round; stroke-linejoin: round; }
+    .dash { stroke-width: 4; stroke-dasharray: 13 16; }
+    .thin { stroke-width: 4; }
+    .accent-line { stroke: #347c7a; stroke-width: 5; }
+    .node, .tower, .label { filter: url(#sketch-6); }
+    .node *,.tower { stroke-width: 4; }
+    .tower { rx: 8; }
+    .label rect { fill: rgba(251,245,233,.88); stroke: #347c7a; stroke-width: 3; }
+    .label text { fill: #24383b; font: 700 24px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .title { fill: #24383b; font: 800 38px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  </style>
+  <rect class="paper" width="1200" height="525"/>
+  <ellipse class="wash" cx="190" cy="155" rx="118" ry="86" fill="#b9d2e7"/>
+  <ellipse class="wash" cx="630" cy="305" rx="170" ry="105" fill="#e48d72"/>
+  <ellipse class="wash" cx="980" cy="145" rx="120" ry="86" fill="#6fb6b2"/>
+  <path d="M85 414 C230 458 312 382 448 425 S715 482 877 414 S1040 390 1122 428" fill="none" stroke="#c8bda8" stroke-width="4" opacity=".45"/>
+  <text class="title" x="64" y="72">Authorization</text>
+  
+      <path class="dash" d="M190 250 C355 170 500 175 635 245 S835 300 990 205"/>
+      <g class="node" transform="translate(240 250)"><path d="M-32 -44 H18 L36 -26 V44 H-32 Z" fill="#b9d2e7" stroke="#24383b"/><path d="M18 -44 V-26 H36 M-15 -8 H16 M-15 12 H20" class="thin"/></g>
+      <g class="node" transform="translate(520 190)"><rect x="-38" y="-10" width="76" height="58" rx="9" fill="#efc66f" stroke="#24383b"/><path d="M-22 -10 V-26 Q-22 -48 0 -48 Q22 -48 22 -26 V-10" class="thin"/><circle cx="0" cy="17" r="8" fill="#fbf5e9" stroke="#24383b"/></g>
+      <g class="node" transform="translate(825 245)"><path d="M0 -38 L36 -24 L36 10 Q36 44 0 60 Q-36 44 -36 10 L-36 -24 Z" fill="#6fb6b2" stroke="#24383b"/><path d="M-15 13 L-3 26 L21 -10" class="thin"/></g>
+  <g class="label" transform="translate(90 108)">
+    <rect x="0" y="0" width="160" height="46" rx="10"/>
+    <text x="80" y="30" text-anchor="middle">Role</text>
+  </g>
+  <g class="label" transform="translate(510 70)">
+    <rect x="0" y="0" width="160" height="46" rx="10"/>
+    <text x="80" y="30" text-anchor="middle">Binding</text>
+  </g>
+  <g class="label" transform="translate(885 365)">
+    <rect x="0" y="0" width="160" height="46" rx="10"/>
+    <text x="80" y="30" text-anchor="middle">Access</text>
+  </g>
+</svg>

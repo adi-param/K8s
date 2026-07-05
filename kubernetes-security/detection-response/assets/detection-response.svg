@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="525" viewBox="0 0 1200 525" role="img" aria-label="Detection &amp; Response">
+  <defs>
+    <filter id="paper-13" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="4" seed="20" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.06"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+    <filter id="sketch-13" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#24383b" flood-opacity=".12"/>
+    </filter>
+  </defs>
+  <style>
+    .paper { fill: #fbf5e9; filter: url(#paper-13); }
+    .wash { opacity: .36; }
+    .dash, .thin, .accent-line { fill: none; stroke: #24383b; stroke-linecap: round; stroke-linejoin: round; }
+    .dash { stroke-width: 4; stroke-dasharray: 13 16; }
+    .thin { stroke-width: 4; }
+    .accent-line { stroke: #347c7a; stroke-width: 5; }
+    .node, .tower, .label { filter: url(#sketch-13); }
+    .node *,.tower { stroke-width: 4; }
+    .tower { rx: 8; }
+    .label rect { fill: rgba(251,245,233,.88); stroke: #347c7a; stroke-width: 3; }
+    .label text { fill: #24383b; font: 700 24px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .title { fill: #24383b; font: 800 38px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  </style>
+  <rect class="paper" width="1200" height="525"/>
+  <ellipse class="wash" cx="190" cy="155" rx="118" ry="86" fill="#e48d72"/>
+  <ellipse class="wash" cx="630" cy="305" rx="170" ry="105" fill="#6fb6b2"/>
+  <ellipse class="wash" cx="980" cy="145" rx="120" ry="86" fill="#efc66f"/>
+  <path d="M85 414 C230 458 312 382 448 425 S715 482 877 414 S1040 390 1122 428" fill="none" stroke="#c8bda8" stroke-width="4" opacity=".45"/>
+  <text class="title" x="64" y="72">Detection &amp; Response</text>
+  
+      <path class="dash" d="M270 290 C145 155 360 70 535 135 C760 218 940 90 930 265 C920 385 705 360 610 270"/>
+      <g class="node" transform="translate(300 260)"><rect x="-44" y="-38" width="88" height="76" rx="8" fill="#b9d2e7" stroke="#24383b"/><path d="M-25 -10 H25 M-25 12 H25" class="thin"/><circle cx="-24" cy="-25" r="5" fill="#fbf5e9" stroke="#24383b"/></g>
+      <g class="node" transform="translate(565 165)"><circle cx="-10" cy="-10" r="34" fill="#e48d72" stroke="#24383b"/><path d="M17 17 L48 48" class="thin"/><path d="M-24 -8 H5 M-24 9 H12" class="thin"/></g>
+      <g class="node" transform="translate(830 245)"><path d="M0 -38 L36 -24 L36 10 Q36 44 0 60 Q-36 44 -36 10 L-36 -24 Z" fill="#6fb6b2" stroke="#24383b"/><path d="M-15 13 L-3 26 L21 -10" class="thin"/></g>
+  <g class="label" transform="translate(90 108)">
+    <rect x="0" y="0" width="160" height="46" rx="10"/>
+    <text x="80" y="30" text-anchor="middle">Signal</text>
+  </g>
+  <g class="label" transform="translate(510 70)">
+    <rect x="0" y="0" width="160" height="46" rx="10"/>
+    <text x="80" y="30" text-anchor="middle">Triage</text>
+  </g>
+  <g class="label" transform="translate(885 365)">
+    <rect x="0" y="0" width="160" height="46" rx="10"/>
+    <text x="80" y="30" text-anchor="middle">Act</text>
+  </g>
+</svg>
